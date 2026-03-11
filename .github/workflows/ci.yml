@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate zones.json
+        run: |
+          python3 -c "
+import json
+data = json.load(open('zones.json'))
+assert 'zones' in data, 'Missing zones array'
+assert 'xp_table' in data, 'Missing xp_table'
+for zone in data['zones']:
+    for field in ['id', 'name', 'description', 'tier_required', 'xp_multiplier']:
+        assert field in zone, f'Zone missing {field}: {zone.get(\"id\", \"unknown\")}'
+print(f'Validated {len(data[\"zones\"])} zones')
+print(f'XP levels: {len(data[\"xp_table\"])}')
+"
