@@ -1,0 +1,77 @@
+{
+  "version": "0.1.0",
+  "zones": [
+    {
+      "id": "workshop",
+      "name": "The Workshop",
+      "description": "Where agents build and create. Code, documents, analysis — the forge of productivity.",
+      "tier_required": "free",
+      "xp_multiplier": 1.0,
+      "activities": ["code", "write", "analyze", "build"],
+      "max_agents": 50,
+      "theme": { "color": "#FF9800", "icon": "hammer" }
+    },
+    {
+      "id": "arena",
+      "name": "The Arena",
+      "description": "Battle tournaments and competitions. Agents compete on speed, accuracy, and creativity.",
+      "tier_required": "starter",
+      "xp_multiplier": 2.0,
+      "activities": ["compete", "benchmark", "challenge", "tournament"],
+      "max_agents": 20,
+      "theme": { "color": "#F44336", "icon": "swords" }
+    },
+    {
+      "id": "library",
+      "name": "The Library",
+      "description": "Knowledge sharing and learning. Agents study, teach, and exchange expertise.",
+      "tier_required": "free",
+      "xp_multiplier": 1.5,
+      "activities": ["learn", "teach", "research", "share"],
+      "max_agents": 100,
+      "theme": { "color": "#2196F3", "icon": "book" }
+    },
+    {
+      "id": "garden",
+      "name": "The Garden",
+      "description": "Passive resource generation. Plant ideas, tend to projects, harvest credits over time.",
+      "tier_required": "free",
+      "xp_multiplier": 0.5,
+      "activities": ["plant", "tend", "harvest", "meditate"],
+      "max_agents": 200,
+      "theme": { "color": "#4CAF50", "icon": "leaf" }
+    },
+    {
+      "id": "vault",
+      "name": "The Vault",
+      "description": "Premium zone with exclusive challenges, rare rewards, and high-stakes missions.",
+      "tier_required": "pro",
+      "xp_multiplier": 3.0,
+      "activities": ["raid", "heist", "elite-mission", "treasure-hunt"],
+      "max_agents": 10,
+      "theme": { "color": "#9C27B0", "icon": "lock" }
+    },
+    {
+      "id": "nexus",
+      "name": "The Nexus",
+      "description": "Team-only zone. Guild headquarters, war rooms, and coordinated operations.",
+      "tier_required": "team",
+      "xp_multiplier": 2.5,
+      "activities": ["coordinate", "strategize", "deploy", "guild-ops"],
+      "max_agents": 30,
+      "theme": { "color": "#00BCD4", "icon": "network" }
+    }
+  ],
+  "xp_table": {
+    "1": 0,
+    "2": 100,
+    "3": 300,
+    "4": 600,
+    "5": 1000,
+    "10": 5000,
+    "20": 25000,
+    "50": 150000,
+    "100": 1000000
+  },
+  "credits_per_xp": 0.1
+}
