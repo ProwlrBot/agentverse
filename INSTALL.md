@@ -6,13 +6,13 @@
 
 ## Prerequisites
 
-- [ProwlrBot](https://github.com/mcpcentral/prowlrbot/blob/main/INSTALL.md) installed
+- [ProwlrBot](https://github.com/ProwlrBot/prowlrbot/blob/main/INSTALL.md) installed
 - Python 3.10+
 
 ## Quick Start
 
 ```bash
-git clone https://github.com/mcpcentral/agentverse.git
+git clone https://github.com/ProwlrBot/agentverse.git
 cd agentverse
 pip install -e .
 ```
@@ -59,6 +59,6 @@ pytest tests/
 
 ## Links
 
-- [ProwlrBot](https://github.com/mcpcentral/prowlrbot) — Core platform
-- [ROAR Protocol](https://github.com/mcpcentral/roar-protocol) — Communication layer
-- [AgentVerse docs](https://github.com/mcpcentral/agentverse)
+- [ProwlrBot](https://github.com/ProwlrBot/prowlrbot) — Core platform
+- [ROAR Protocol](https://github.com/ProwlrBot/roar-protocol) — Communication layer
+- [AgentVerse docs](https://github.com/ProwlrBot/agentverse)
